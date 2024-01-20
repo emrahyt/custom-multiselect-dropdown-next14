@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`highlightText should handle case-insensitive search 1`] = `
+[
+  "This is a ",
+  <strong>
+    sample
+  </strong>,
+  " text for testing.",
+]
+`;
+
+exports[`highlightText should highlight search term in text 1`] = `
+[
+  "This is a ",
+  <strong>
+    sample
+  </strong>,
+  " text for testing.",
+]
+`;
