@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
-import Layout from "@/components/atoms/base-layout/base-layout.component";
+import BaseLayout from "@/components/atoms/base-layout/base-layout.component";
 import ArrowIcon from "@/components/atoms/arrow-icon/arrow-icon.component";
 import Chip from "@/components/molecules/chip/chip.component";
 import InputField from "@/components/atoms/input-field/input-field.component";
@@ -166,7 +166,7 @@ const MultiselectDropdown: React.FC = () => {
   const showErrorText = !isLoading && isError;
 
   return (
-    <Layout ref={containerRef}>
+    <BaseLayout ref={containerRef}>
       <StyledContainer ref={searchBoxRef}>
         {selectedCharacters.map(({ name, id }) => (
           <Chip
@@ -202,7 +202,7 @@ const MultiselectDropdown: React.FC = () => {
         show={showNotification}
         onClose={() => setShowNotification(false)}
       />
-    </Layout>
+    </BaseLayout>
   );
 };
 

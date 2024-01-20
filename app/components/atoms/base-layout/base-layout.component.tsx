@@ -5,7 +5,7 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const Layout = forwardRef(
+const BaseLayout = forwardRef(
   ({ children }: LayoutProps, ref: Ref<HTMLDivElement>) => (
     <StyledWrapper>
       <StyledContainer ref={ref}>{children}</StyledContainer>
@@ -13,4 +13,5 @@ const Layout = forwardRef(
   )
 );
 
-export default Layout;
+BaseLayout.displayName = "BaseLayout";
+export default BaseLayout;
